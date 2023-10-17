@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Landing - Rafael Durán by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Rafael Durán</strong> <span>by HTML5 UP</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="introduction.html">Introduction</a></li>
+							<li><a href="dataPreprocessing.html">Data Preprocessing</a></li>
+							<li><a href="linearAlgorithms.html">Linear Algorithms</a></li>
+							<li><a href="nonlinearAlgorithms.html">Non Linear Algorithms</a></li>
+							<li><a href="caseStudie1.html">Case Studie 1</a></li>
+							<li><a href="caseStudie2.html">Case Studie 2</a></li>
+							<li><a href="caseStudie3.html">Case Studie 3</a></li>						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Case Studie 1: Survival Chances on Titanic</h1>
+							</header>
+							<div class="content">
+								<p>The Titanic dataset is a well-known dataset in the field of data science and machine learning. 
+									This dataset provides information about the passengers on board the famous ship Titanic, 
+									which sank on its maiden voyage in 1912 after colliding with an iceberg. 
+									The Titanic dataset is widely used for data analysis, predictive modeling, 
+									and machine learning tasks due to its simplicity and the variety of interesting 
+									questions it can address.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h2>OBJECTIVE</h2>
+								</header>
+								<p>The objective of the Titanic dataset can vary depending on the specific analysis or machine learning 
+									task being performed. Generally, the main objectives of working with the Titanic dataset include:
+									<br><br>
+									<strong>Survival Prediction:</strong> One common objective is to build predictive models that 
+									can determine the likelihood of a passenger surviving the sinking of the Titanic based on their 
+									characteristics and other information. This is typically framed as a binary classification problem 
+									where the goal is to predict whether a passenger survived (1) or did not survive (0).
+									<br><br>
+									<strong>Data Exploration and Analysis:</strong> Another objective is to explore and analyze the dataset 
+									to gain insights into the demographics and characteristics of the passengers. This can involve identifying 
+									patterns, trends, and correlations among various features, such as the relationship between passenger 
+									class and survival rates, the impact of age and gender on survival, etc.
+								</p>
+							</div>
+						</section>
+
+												<!-- Two -->
+												<section id="two" class="spotlights">
+													<section>
+														<a href="generic.html" class="image">
+															<img src="images/pic08.jpg" alt="" data-position="center center" />
+														</a>
+														<div class="content">
+															<div class="inner">
+																<header class="major">
+																	<h3>DATA INSPECTION</h3>
+																</header>
+																<p>Firstly, we need to understand what we are dealing with. Data types, ranges, averages, deviations, and distributions. 
+																	Running the Retrieve operator alone results in the unmodified dataset as an output, 
+																	ideal to inspect the content of the dataset.</p>
+																 
+																 <a href="generic.html" class="image">
+																	 <img src="images/titanic1.png" alt="" data-position="center center" style="width: 800px; height: 600px;" />
+																 </a>
+																 
+																 <a href="generic.html" class="image">
+																	 <img src="images/titanic2.png" alt="" data-position="center center" style="width: 800px; height: 600px;" />
+																 </a>
+																 <p>Just by visualizing the dataset, we know there are 1309 examples total. The Cabin attribute alone has 1014 values missing, 
+																	almost 78% of the data examples. Other attribute also present missing values, such as Age with 263, Life Boat with 823, 
+																	Passenger Fare with 1, etc. This values need to be handle before training any model.</p>
+																	
+																 <a href="generic.html" class="image">
+																	<img src="images/titanic3.png" alt="" data-position="center center" style="width: 800px; height: 600px;" />
+																</a>
+														</div>
+													</section>
+													<section>
+														<div class="content">
+															<div class="inner">
+																<header class="major">
+																	<h3>ATTRIBUTE SELECTION AND EXAMPLES FILTERING</h3>
+																</header>
+																<p>Attributes Cabin and Life Boat present more than 50% of missing examples. This implies that the information given 
+																	by this attribute can cause serius bias in the model, if used like this or with artificial data. Because of this, 
+																	the better option is to completly vanish the attribute before training. 
+																	This can be done with the Select Attributes Rapid Miner operator, selecting the subset of attributes to ignore.</p>
+
+																	<p>Age attribute presents a lot of missing values too, but not in a significant way as the attributes discused before. 
+																		Further, this time we need to handle a numeric attribute. 263 examples are still a lot to delete, but we can impute 
+																		the average value of ages. This way we mantain the examples for Further use. This can be done with the Replace 
+																		Missing Values operator, setted with average imputation.</p>
+
+																	<p>We still have some examples to deal with. Yet, the attributes they lack have only 1 or 2 total missing values, 
+																		which is an acceptable value considering the context. Given the fact that the dataset has about 1300 examples, 
+																		filtering some of them won't cause any noticable changes. With the Filter Examples operator we can get rid of the remaining missing values. 
+																		The resultant chain of RapidMiner operators is now presented.</p>
+																	<a href="generic.html" class="image">
+																		<img src="images/titanic4.png" alt="" data-position="center center" style="width: 800px; height: 600px;"/>
+																	</a>
+															</div>
+														</div>
+													</section>
+													<section>
+														<div class="content">
+															<div class="inner">
+																<header class="major">
+																	<h3>CONCLUSIONS</h3>
+																</header>
+																<p>After this manipulation, every classification algorithm can be used to predict the target variable. 
+																	Some extra step may be to apply data transformations (depending on the chosen algorithm) and some 
+																	Feature Selection techniques to lower the dimensions of the problem, but we still obtained a 
+																	decent dataset to work with.</p>
+															</div>
+														</div>
+													</section>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">rafael.duran@correo.ucu.edu.uy
+											duran.r.m.g@gmail.com</a>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/Rafael-Dur" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/rafael-dur%C3%A1n-306762253/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

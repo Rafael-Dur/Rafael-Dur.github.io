@@ -142,12 +142,44 @@
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Rhoncus magna</h3>
+												<h3>DATA ANALYSIS</h3>
 											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
+											<p>The target variable of the problem is the class variable with attributes cdk and notcdk. It is a binary variable. 
+												The predictors of the dataset refer to whether the person has some diseases such as diabetes or hypertension and 
+												anemia, we have the age of the person and various medical data such as blood pressure, potassium, hemoglobin, 
+												sodium, among others.</p>
+
+											<p>Disease attributes are binary nominal attributes that specify whether or not the person has the disease, 
+												specified as yes or no. Appetite is specified as good or poor. Appetite is specified as good or poor. 
+												Others, such as pcc, say present or notpresent, just as pc indicates whether the level is normal or abnormal. 
+												The attributes sg, al and su are nominal with values specified in the dataset information. 
+												The rest of the attributes are numeric.</p>
+											<a href="generic.html" class="image">
+												<img src="images/kdimage1.png" alt="" data-position="center center" style="width: 500px; height: 200px;" />
+											</a>
+											<p>Below are the ranges, means, variances and distributions of all the data in the dataset. 
+												It is observed that the dataset is not balanced, it has 250 cases of cdk and 150 examples of notcdk,
+												 where there are missing values that must be managed. In total we have 400 examples in the dataset.</p>
+												 <a href="generic.html" class="image">
+													<img src="images/kd1.png" alt="" data-position="center center" style="width: 500px; height: 200px;" />
+												</a>
+												<a href="generic.html" class="image">
+													<img src="images/kd2.png" alt="" data-position="center center" style="width: 500px; height: 200px;" />
+												</a>
+												<a href="generic.html" class="image">
+													<img src="images/kd3.png" alt="" data-position="center center" style="width: 500px; height: 200px;" />
+												</a>
+												<a href="generic.html" class="image">
+													<img src="images/kd4.png" alt="" data-position="center center" style="width: 500px; height: 200px;" />
+												</a>
+												<a href="generic.html" class="image">
+													<img src="images/kd5.png" alt="" data-position="center center" style="width: 500px; height: 200px;" />
+												</a>
+												<p>It is observed how the data distributions, for the most part, are skewed to the right or left. 
+													This in some cases can be accommodated with some transformation to avoid skewing the data. 
+													It is also noted that in potassium and sodium we have examples that appear to be outliers because they are excessively 
+													far from the majority of the data. These should be removed from the dataset so that they do not influence the predictions.
+													 Bias is also observed in the binary attributes.</p>
 										</div>
 									</div>
 								</section>
@@ -173,9 +205,11 @@
 							<section id="three">
 								<div class="inner">
 									<header class="major">
-										<h2>Massa libero</h2>
+										<h2>CONCLUSIONS</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+									<p>Naive Bayes gave the best accuracy results of them three, with a 100% of correct predictions. 
+										Nevertheless, all three algorithms gave over 98% in prediction accuracy, so all presented models would have been 
+										a good choice here. The only thing to do now is to start predicting new data when needed.</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button next">Get Started</a></li>
 									</ul>
@@ -184,43 +218,6 @@
 
 					</div>
 
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">rafael.duran@correo.ucu.edu.uy
-											duran.r.m.g@gmail.com</a>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
 
 				<!-- Footer -->
 					<footer id="footer">

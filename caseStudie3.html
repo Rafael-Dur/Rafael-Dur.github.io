@@ -99,36 +99,87 @@
 											<header class="major">
 												<h3>DATA</h3>
 											</header>
-											<p>The dataset typically includes the following information:</p>
-											<p><strong>Patient Information:</strong>
-
-												<li>Age: The age of the patient.</li>
-												<li>Sex: The gender of the patient.</li>
-												<li>Blood Pressure: Blood pressure measurements (e.g., systolic and diastolic).</li>
-												<li>Specific Gravity: A measure of urine specific gravity.</li>
-												<li>Albumin: The presence of albumin in urine.</li>
-												<li>Sugar: The presence of sugar in urine.</li>
-												<li>Blood Cells: The presence of red blood cells in urine.</li> </p>
-
-											<p><strong>Symptoms and Tests:</strong>
-
-												<li>Pus Cell: The presence of pus cells in urine.</li>
-												<li>Pus Cell Clumps: The presence of pus cell clumps in urine.</li>
-												<li>Bacteria: The presence of bacteria in urine.</li>
-												<li>Blood Glucose Random: Random blood glucose levels.</li>
-												<li>Blood Urea: Blood urea levels.</li>
-												<li>Serum Creatinine: Serum creatinine levels.</li>
-												<li>Sodium: Sodium levels.</li>
-												<li>Potassium: Potassium levels.</li></p>
-
-											<p><strong>Medical History and Comorbidities:</strong>
-
-												<li>Hemoglobin: Hemoglobin levels.</li>
-												<li>Diabetes Mellitus: Whether the patient has diabetes.</li>
-												<li>Coronary Artery Disease: Whether the patient has coronary artery disease.</li>
-												<li>Appetite: The patient's appetite (good, poor).</li></p>
-
-											<p><strong>Target Variable:</strong>
+											<p>The attributes included in the dataset are the following: </p>
+											<p><li>age		-	age</li>
+												<li>bp		-	blood pressure</li>
+												<li>sg		-	specific gravity</li>
+												<li>al		-   albumin</li>
+												<li>al		-   albumin</li>
+												<li>su		-	sugar</li>
+												<li>rbc		-	red blood cells</li>
+												<li>pc		-	pus cell</li>
+												<li>pcc		-	pus cell clumps</li>
+												<li>ba		-	bacteria</li>
+												<li>bgr		-	blood glucose random</li>
+												<li>bu		-	blood urea</li>
+												<li>sc		-	serum creatinine</li>
+												<li>sod		-	sodium</li>
+												<li>pot		-	potassium</li>
+												<li>hemo	-	hemoglobin</li>
+												<li>pcv		-	packed cell volume</li>
+												<li>wc		-	white blood cell count</li>
+												<li>rc		-	red blood cell count</li>
+												<li>htn		-	hypertension</li>
+												<li>dm		-	diabetes mellitus</li>
+												<li>cad		-	coronary artery disease</li>
+												<li>appet	-	appetite</li>
+												<li>pe		-	pedal edema</li>
+												<li>ane		-	anemia</li>
+												<li>class	-	class</li></p>
+												
+											<p><strong>Attribute Information:</strong>
+												<p>Here there is a description about the type of data every attribute is represented with and the possible options each one includes:</p>
+												<li><strong>1.Age</strong>(numerical)
+													age in years</li>
+												<li><strong>2.Blood</strong> Pressure(numerical)
+													bp in mm/Hg</li>
+												<li><strong>3.Specific</strong> Gravity(nominal)
+													sg - (1.005,1.010,1.015,1.020,1.025)</li>
+												<li><strong>4.Albumin</strong>(nominal)
+													al - (0,1,2,3,4,5)</li>
+												<li><strong>5.Sugar</strong>(nominal)
+													su - (0,1,2,3,4,5)</li>
+												<li><strong>6.Red Blood Cells</strong>(nominal)
+													rbc - (normal,abnormal)</li>
+												<li><strong>7.Pus Cell</strong> (nominal)
+													pc - (normal,abnormal)</li>
+												<li><strong>8.Pus Cell clumps</strong>(nominal)
+													pcc - (present,notpresent)</li>
+												<li><strong>9.Bacteria</strong>(nominal)
+													ba  - (present,notpresent)</li>
+												<li><strong>10.Blood Glucose Random</strong>(numerical)		
+													bgr in mgs/dl</li>
+												<li><strong>11.Blood Urea</strong>(numerical)	
+													bu in mgs/dl</li>
+												<li><strong>12.Serum Creatinine</strong>(numerical)	
+													sc in mgs/dl</li>
+												<li><strong>13.Sodium</strong>(numerical)
+													sod in mEq/L</li>
+												<li><strong>14.Potassium</strong>(numerical)	
+													pot in mEq/L</li>
+												<li><strong>15.Hemoglobin</strong>(numerical)
+													hemo in gms</li>
+												<li><strong>16.Packed  Cell Volume</strong>(numerical)</li>
+												<li><strong>17.White Blood Cell Count</strong>(numerical)
+													wc in cells/cumm</li>
+												<li><strong>18.Red Blood Cell Count</strong>(numerical)	
+													rc in millions/cmm</li>
+												<li><strong>19.Hypertension</strong>(nominal)	
+													htn - (yes,no)</li>
+												<li><strong>20.Diabetes Mellitus</strong>(nominal)	
+													dm - (yes,no)</li>
+												<li><strong>21.Coronary Artery Disease</strong>(nominal)
+													cad - (yes,no)</li>
+												<li><strong>22.Appetite</strong>(nominal)	
+													appet - (good,poor)</li>
+												<li><strong>23.Pedal Edema</strong>(nominal)
+													pe - (yes,no)	</li>
+												<li><strong>24.Anemia</strong>(nominal)
+													ane - (yes,no)</li>
+												<li><strong>25.Class</strong> (nominal)		
+													class - (ckd,notckd)</li>
+												
+											<strong>Target Variable:</strong>
 
 												Class: The target variable indicating the presence (ckd) or absence (notckd) of chronic kidney disease.</p>
 
@@ -147,34 +198,22 @@
 											<p>The target variable of the problem is the class variable with attributes cdk and notcdk. It is a binary variable. 
 												The predictors of the dataset refer to whether the person has some diseases such as diabetes or hypertension and 
 												anemia, we have the age of the person and various medical data such as blood pressure, potassium, hemoglobin, 
-												sodium, among others.</p>
+												sodium, etc.</p>
 
 											<p>Disease attributes are binary nominal attributes that specify whether or not the person has the disease, 
 												specified as yes or no. Appetite is specified as good or poor. Appetite is specified as good or poor. 
 												Others, such as pcc, say present or notpresent, just as pc indicates whether the level is normal or abnormal. 
-												The attributes sg, al and su are nominal with values specified in the dataset information. 
+												The attributes <strong>al</strong>, <strong>sg</strong> and <strong>su</strong> are nominal with values specified in the dataset information. 
 												The rest of the attributes are numeric.</p>
-											<a href="generic.html" class="image">
-												<img src="images/kdimage1.png" alt="" data-position="center center" style="width: 500px; height: 200px;" />
-											</a>
+											
 											<p>Below are the ranges, means, variances and distributions of all the data in the dataset. 
 												It is observed that the dataset is not balanced, it has 250 cases of cdk and 150 examples of notcdk,
 												 where there are missing values that must be managed. In total we have 400 examples in the dataset.</p>
-												 <a href="generic.html" class="image">
 													<img src="images/kd1.png" alt="" data-position="center center" style="width: 700px; height: 400px;" />
-												</a>
-												<a href="generic.html" class="image">
 													<img src="images/kd2.png" alt="" data-position="center center" style="width: 700px; height: 400px;" />
-												</a>
-												<a href="generic.html" class="image">
 													<img src="images/kd3.png" alt="" data-position="center center" style="width: 700px; height: 400px;" />
-												</a>
-												<a href="generic.html" class="image">
 													<img src="images/kd4.png" alt="" data-position="center center" style="width: 700px; height: 400px;" />
-												</a>
-												<a href="generic.html" class="image">
 													<img src="images/kd5.png" alt="" data-position="center center" style="width: 700px; height: 400px;" />
-												</a>
 												<p>It is observed how the data distributions, for the most part, are skewed to the right or left. 
 													This in some cases can be accommodated with some transformation to avoid skewing the data. 
 													It is also noted that in potassium and sodium we have examples that appear to be outliers because they are excessively 
@@ -199,9 +238,14 @@
 												I decided to proceed in this order given the fact that the number of examples is considerably larger than the number of outliers, so they do not affect 
 												the imputed value in a considerable way. The distributions with outliers are bp, sc, pot and wbcc.
 												In order to get rid of this outliers some filters were applied, which are the following:</p>
-												<a href="generic.html" class="image">
-													<img src="images/kd6.png" alt="" data-position="center center" style="width: 700px; height: 300px;" />
-												</a>
+												<img src="images/kd6.png" alt="" data-position="center center" style="width: 700px; height: 300px;" />
+												
+												<p>After filtering outliers, we applied transformations to some attributes. To the attributes bgr, bu and sc we apply a logarithmic 
+													transformation to remove skewness from the distribution. The second filter is merely to remove the remaining examples with missing 
+													values. Numeric data is also standarize for it to have a more gaussian-like distribution. After these operations, we apply the Naive Bayes 
+													model with a Backward Elimination. Finally, we apply the model.</p>
+													<img src="images/kd7.png" alt="" data-position="25% 25%" />
+													<img src="images/kd8.png" alt="" data-position="25% 25%" />
 										</div>
 									</div>
 								</section>
@@ -211,14 +255,13 @@
 							<section id="three">
 								<div class="inner">
 									<header class="major">
-										<h2>CONCLUSIONS</h2>
+										<h2>CONCLUSION</h2>
 									</header>
-									<p>Naive Bayes gave the best accuracy results of them three, with a 100% of correct predictions. 
-										Nevertheless, all three algorithms gave over 98% in prediction accuracy, so all presented models would have been 
-										a good choice here. The only thing to do now is to start predicting new data when needed.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button next">Get Started</a></li>
-									</ul>
+									<p>Naive Bayes assumes that the attributes are conditionally independent, and in this case, all indications are that they are. 
+										A good indication that this is an appropriate algorithm is also that most attributes are categorical. Numerical attributes 
+										with non-Gaussian distributions can be discretized or converted to nominals to solve this problem, but since there are fewer of them, 
+										there are not many such problems. After the transformations, the mayority of numerical attribute has a gaussian-like distribution, 
+										making this model ideal.</p>
 								</div>
 							</section>
 

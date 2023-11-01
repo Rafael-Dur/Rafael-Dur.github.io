@@ -30,7 +30,9 @@
 							<li><a href="dataPreprocessing.html">Data Preprocessing</a></li>
 							<li><a href="linearAlgorithms.html">Linear Algorithms</a></li>
 							<li><a href="nonlinearAlgorithms.html">Non Linear Algorithms</a></li>
-							<li><a href="caseStudies.html">Case Studies</a></li>
+							<li><a href="caseStudie1.html">Case Studie 1</a></li>
+							<li><a href="caseStudie2.html">Case Studie 2</a></li>
+							<li><a href="caseStudie3.html">Case Studie 3</a></li>
 						</ul>
 						<ul class="actions stacked">
 							<li><a href="#" class="button primary fit">Get Started</a></li>
@@ -43,14 +45,15 @@
 					<section id="banner" class="style2">
 						<div class="inner">
 							<span class="image">
-								<img src="images/pic07.jpg" alt="" />
+								<img src="images/pic2.jpeg" alt="" />
 							</span>
 							<header class="major">
-								<h1>Info</h1>
+								<h1>Data preprocessing</h1>
 							</header>
 							<div class="content">
-								<p>Lorem ipsum dolor sit amet nullam consequat<br />
-								sed veroeros. tempus adipiscing nulla.</p>
+								<p>Most of the time, it's hard to deal with raw data. Given the fact it can be in any format, there might be missing attributes and in some cases, 
+									even there is plenty of data which is useless to our model. This is why it is essential to filter the datasets before starting to build a model, 
+									so that it can be more clear and easier to understand what are we dealing with.</p>
 							</div>
 						</div>
 					</section>
@@ -62,14 +65,22 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Sed amet aliquam</h2>
+										<h2>Introduction</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+									<p>Data preprocessing is a crucial step in the data analysis and machine learning pipeline. It involves cleaning, transforming, 
+										and organizing raw data into a format that is suitable for analysis or model training. The goal of data preprocessing is to 
+										improve data quality, remove noise and inconsistencies, and make the data ready for effective use.</p>
+
+									<p>Effective data preprocessing is essential for ensuring the quality and reliability of the results obtained from data analysis 
+										and modeling.The specific steps and techniques used in data preprocessing depend on the nature of the data, the objectives of 
+										the analysis, and the requirements of the machine learning model being used. Yet the ones that will be mentioned bellow are 
+										some of the most common to almost any dataset: </p>
+
 								</div>
 							</section>
 
 						<!-- Two -->
-							<section id="two" class="spotlights">
+							<section id="two" class="inner">
 								<section>
 									<a href="generic.html" class="image">
 										<img src="images/pic08.jpg" alt="" data-position="center center" />
@@ -77,12 +88,14 @@
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Orci maecenas</h3>
+												<h3>Handling Missing Data</h3>
 											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
+											<p>Missing data can arise from various sources, such as sensor errors, survey non-responses, or data entry mistakes. 
+												Common methods for dealing with missing data include:</p>
+												<p><li>Imputation: Replacing missing values with a reasonable estimate. This can be done using mean, median, 
+													mode values, or more advanced techniques like regression imputation.</li> 
+													<li>Removal: If the missing data is extensive and imputation is not feasible, removing rows or columns 
+														with missing values may be necessary.</li></p>
 										</div>
 									</div>
 								</section>
@@ -93,12 +106,11 @@
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Rhoncus magna</h3>
+												<h3>Outlier Detection and Treatment</h3>
 											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
+											<p>Outliers are data points that significantly deviate from the majority of the data. Identifying and dealing with outliers is important as 
+												they can distort statistical analyses and machine learning models. Methods for outlier treatment include trimming, winsorizing, 
+												or transforming the data to be less sensitive to outliers.</p>
 										</div>
 									</div>
 								</section>
@@ -109,70 +121,168 @@
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Sed nunc ligula</h3>
+												<h3>Feature Engineering</h3>
 											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
+											<p>Feature engineering involves creating new features or modifying existing ones to improve the performance of machine learning models. This can include:</p>
+												<p>	<li>Creating interaction features by combining two or more variables.</li>
+													<li>Binning or discretizing continuous variables to make them categorical.</li>
+													<li>Extracting information from text data, such as sentiment scores or keyword counts.</li>
+													<li>Feature scaling, such as min-max scaling or z-score scaling, to standardize features.</li></p>
 										</div>
 									</div>
 								</section>
-							</section>
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Dimensionality Reduction</h3>
+											</header>
+											<p>Dimensionality reduction techniques are used to reduce the number of features while preserving the most important information. 
+												Common methods include Principal Component Analysis (PCA) for linear dimensionality reduction and t-Distributed Stochastic Neighbor Embedding 
+												(t-SNE) for nonlinear dimensionality reduction.</p>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Handling Imbalanced Data</h3>
+											</header>
+											<p>Imbalanced datasets occur when one class significantly outnumbers the other. In such cases, techniques like oversampling, undersampling, 
+												or the use of synthetic data generation methods like SMOTE can balance the dataset, making it more suitable for machine learning.</p>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Encoding Categorical Data</h3>
+											</header>
+											<p>Categorical variables need to be encoded into numerical form for most machine learning algorithms. Common methods include:
+												<li>One-Hot Encoding: Creating binary columns for each category.</li>
+												<li>Label Encoding: Assigning a unique numerical label to each category.</li></p>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Data Transformation</h3>
+											</header>
+											<p><li><strong>Data Scaling and Normalization:</strong> Scale numerical features to a standard range (e.g., between 0 and 1) to ensure that different features 
+												are on a similar scale, which is important for many machine learning algorithms, like support vector machines or k-means clustering, 
+												which are sensitive to feature scaling. Min-max scaling and z-score normalization are widely used techniques.</li>
+
+												<li><strong>Data Standardization:</strong> Transform data to have a mean of 0 and a standard deviation of 1, which is particularly useful for 
+													algorithms that assume a normal distribution of the data.</li>
+
+												<li><strong>Encoding Categorical Data:</strong> Convert categorical variables into a numerical format that algorithms can work with. Common 
+													techniques include one-hot encoding and label encoding.</li>
+
+												<li><strong>Feature Engineering:</strong> Create new features from existing ones to capture additional information or simplify the representation 
+													of the data.</li></p>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Encoding Categorical Data</h3>
+											</header>
+											<p>Categorical variables need to be encoded into numerical form for most machine learning algorithms. Common methods include:
+												<li>One-Hot Encoding: Creating binary columns for each category.</li>
+												<li>Label Encoding: Assigning a unique numerical label to each category.</li></p>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Data Splitting</h3>
+											</header>
+											<p>Data is typically split into three sets: training, validation, and test sets. The training set is used to train the model, 
+												the validation set to tune hyperparameters and assess model performance, and the test set to evaluate the model's generalization 
+												to new, unseen data.</p>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Time Series Preprocessing</h3>
+											</header>
+											<p>When dealing with time series data, you may need to handle seasonality, trends, and temporal patterns. 
+												Techniques like differencing, rolling averages, and decomposition can be used to make the data stationary 
+												and suitable for analysis.</p>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Text Data Preprocessing</h3>
+											</header>
+											<p>For text data analysis, preprocessing includes tokenization (splitting text into words or tokens), stemming or 
+												lemmatization (reducing words to their root form), and stop-word removal to eliminate common, 
+												less informative words.</p>
+										</div>
+									</div>
+								</section>
+
+						</section>
 
 						<!-- Three -->
 							<section id="three">
 								<div class="inner">
 									<header class="major">
-										<h2>Massa libero</h2>
+										<h2>Conclusions</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button next">Get Started</a></li>
-									</ul>
+									<p>Effective data preprocessing is a critical part of the data analysis and machine learning process. The decisions made during 
+										this phase can have a significant impact on the quality and reliability of the results obtained from the data. 
+										It often requires a combination of domain knowledge, data exploration, and iterative refinement to prepare the data optimally 
+										for the specific analytical task at hand.</p>
 								</div>
 							</section>
 
 					</div>
-
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">rafael.duran@correo.ucu.edu.uy
-											duran.r.m.g@gmail.com</a>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
-
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
